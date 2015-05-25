@@ -1,5 +1,5 @@
-# udacity_fullstack_project3
-udacity Full Stack Web Developer Nanodegree Project 3 - Item Catalog
+# Item Catalog
+Udacity Full Stack Web Developer Nanodegree Project 3 - Item Catalog
 
 ##Files
 * application.py -- python script with flask main application
@@ -36,22 +36,20 @@ for session managment you should change the secret key of the app:
 app_secret = 'ZZZ'
 ```
 
-the callback url should be something like https://dev.danielburkard.de/github-callback and can be configured in the head of application.py:
+the callback url should be something like https://yoursite.com/github-callback and can be configured in the head of application.py:
 ```python
-github_callback_url = "https://dev.danielburkard.de/github-callback"
+github_callback_url = "https://yoursite.com/github-callback"
 ```
 
 reset database:
 ```bash
-[daniel@discodia:catalog] rm catalog.db
-[daniel@discodia:catalog] python addData.py
+rm catalog.db
+python database_setup.py
+python addData.py
 ```
 
 ##Usage
 start application
 ```bash
-[daniel@discodia:catalog] python application.py
+python application.py
 ```
-
-##Example
-https://dev.danielburkard.de (login needed)
